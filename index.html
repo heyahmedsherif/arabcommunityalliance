@@ -4,94 +4,185 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arab Community Alliance — Tampa, Florida</title>
-  <meta name="description" content="Arab Community Alliance (ACA) — a not-for-profit community organization empowering, educating, representing and advocating for Arab-Americans in Tampa Bay, Florida." />
+  <meta name="description" content="Arab Community Alliance (ACA) — a not-for-profit organization empowering, educating, representing and advocating for Arab-Americans in Tampa Bay, Florida." />
   <meta property="og:title" content="Arab Community Alliance — Tampa, Florida" />
   <meta property="og:description" content="Empower, Educate, Represent and Advocate for Arab-Americans in Tampa Bay, FL." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.arabcommunityalliance.org" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="flyer">
 
-    <!-- HEADER -->
-    <header class="header">
-      <div class="flag" aria-label="United States flag">
-        <div class="flag-stripes"></div>
-        <div class="flag-canton"><span class="flag-stars"></span></div>
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#top" aria-label="Arab Community Alliance home">
+        <span class="logo-mark"><span class="l-a">A</span><span class="l-c">C</span><span class="l-a2">A</span></span>
+        <span class="logo-text">Arab Community Alliance</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#programs">Programs</a>
+        <a href="#involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+        <a href="#involved" class="nav-cta">Join Us</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Tampa, Florida &middot; Nonprofit</div>
+      <h1 class="hero-title">
+        <span class="logo-mark hero-mark"><span class="l-a">A</span><span class="l-c">C</span><span class="l-a2">A</span></span>
+        Arab Community Alliance
+      </h1>
+      <p class="hero-ar" lang="ar" dir="rtl">تحالف الجالية العربية</p>
+      <p class="hero-tagline">Our Community <span class="dot">•</span> <span class="accent">Our Voice</span> <span class="dot">•</span> Our Future</p>
+      <p class="hero-sub">Empowering, educating, representing and advocating for Arab-Americans in Tampa Bay.</p>
+      <div class="hero-actions">
+        <a href="#involved" class="btn btn-primary">Join Us</a>
+        <a href="#mission" class="btn btn-ghost">Learn More</a>
       </div>
+    </div>
+  </section>
 
-      <div class="brand">
-        <div class="logo" aria-label="ACA logo">
-          <span class="l-a">A</span><span class="l-c">C</span><span class="l-a2">A</span>
+  <!-- MISSION -->
+  <section class="section mission" id="mission">
+    <div class="container">
+      <span class="eyebrow">Who We Are</span>
+      <h2>Our Mission</h2>
+      <p class="lead">Arab Community Alliance is a not-for-profit community organization. We aim to
+        <strong>empower, educate, represent, and advocate</strong> for Arab-Americans in Tampa Bay, Florida —
+        amplifying our community's voice and building a stronger future together.</p>
+      <p class="lead lead-ar" lang="ar" dir="rtl">تحالف الجالية العربية منظمة اجتماعية غير ربحية تهدف إلى تمثيل وخدمة
+        الجالية العربية الأمريكية في منطقة تامبا-فلوريدا، وتمكينها، وتثقيفها، والدفاع عن قضاياها.</p>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section programs" id="programs">
+    <div class="container">
+      <span class="eyebrow">What We Do</span>
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 11-5.8-1.6"/></svg>
+          </div>
+          <h3>Advocacy</h3>
+          <p>Advocate for Arab Tampa and amplify our community's voices on the issues that matter.</p>
+          <p class="card-ar" lang="ar" dir="rtl">إعلاء صوت جالية عرب تامبا والدفاع عن قضاياها</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.6 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+          </div>
+          <h3>Culture &amp; Heritage</h3>
+          <p>Celebrate our cultural and heritage traditions through community events and gatherings.</p>
+          <p class="card-ar" lang="ar" dir="rtl">الاحتفالات الثقافية والتراثية</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Youth Leadership</h3>
+          <p>Develop the next generation of community youth leaders through mentorship and training.</p>
+          <p class="card-ar" lang="ar" dir="rtl">إعداد قادة من بين شباب الجالية</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <h3>Career &amp; Business</h3>
+          <p>Support professional growth with career guidance and business mentoring.</p>
+          <p class="card-ar" lang="ar" dir="rtl">التوجيه المهني والتجاري</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section class="section involved" id="involved">
+    <div class="container involved-inner">
+      <div class="involved-text">
+        <span class="eyebrow light">Join Us</span>
+        <h2>Build a better future for our Tampa community</h2>
+        <p class="involved-ar" lang="ar" dir="rtl">شاركونا لبناء مستقبل أفضل لجاليتنا في تامبا</p>
+        <div class="hero-actions">
+          <a href="mailto:Contact@ArabCommunityAlliance.org" class="btn btn-primary">Get in Touch</a>
+          <a href="https://bit.ly/42HWEHS" target="_blank" rel="noopener" class="btn btn-ghost light">Learn More</a>
         </div>
-        <div class="brand-names">
-          <div class="brand-en">ARAB COMMUNITY<br />ALLIANCE</div>
-          <div class="brand-ar" lang="ar" dir="rtl">تحالف الجالية العربية</div>
-        </div>
-        <div class="brand-location">TAMPA, FLORIDA</div>
       </div>
-    </header>
-
-    <!-- MISSION -->
-    <section class="band mission">
-      <p class="mission-en">A not for profit community organization. Aim to Empower, Educate,
-        Represent and Advocate for Arab-Americans in Tampa Bay, FL</p>
-      <p class="mission-ar" lang="ar" dir="rtl">منظمة اجتماعية غير ربحية تهدف إلى تمثيل وخدمة الجالية العربية الأمريكية في منطقة
-        تامبا-فلوريدا، وتمكينها، وتثقيفها، والدفاع عن قضاياها.</p>
-    </section>
-
-    <!-- PROGRAMS -->
-    <section class="programs">
-      <div class="programs-col programs-en">
-        <h2>Programs:</h2>
-        <ul>
-          <li>Advocate for Arab Tampa, and amplify our voices</li>
-          <li>Cultural and heritage celebrations</li>
-          <li>Develop community youth leaders</li>
-          <li>Career and Business mentoring</li>
-        </ul>
-      </div>
-      <div class="programs-col programs-ar" lang="ar" dir="rtl">
-        <h2>البرامج:</h2>
-        <ul>
-          <li>إعلاء صوت جالية عرب "تامبا" والدفاع عن قضاياها</li>
-          <li>الاحتفالات الثقافية والتراثية</li>
-          <li>إعداد قادة من بين شباب الجالية</li>
-          <li>التوجيه المهني والتجاري</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- JOIN -->
-    <section class="band join">
-      <p class="join-en">JOIN US: Build a better future for our Tampa community</p>
-      <p class="join-ar" lang="ar" dir="rtl">شاركونا لبناء مستقبل أفضل لجاليتنا في تامبا</p>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-      <div class="contact-info">
-        <p class="contact-lead">Contact us:</p>
-        <p class="contact-link"><a href="https://bit.ly/42HWEHS" target="_blank" rel="noopener">bit.ly/42HWEHS</a></p>
-        <p class="contact-email">Email: <a href="mailto:Contact@ArabCommunityAlliance.org">Contact@ArabCommunityAlliance.org</a></p>
-        <p class="contact-phone">Text/Phone: <a href="tel:+16562260998">(656) 226-0998</a></p>
-        <p class="contact-web"><a href="https://www.arabcommunityalliance.org">www.arabcommunityalliance.org</a></p>
-      </div>
-      <div class="contact-qr">
+      <div class="involved-qr">
         <img src="qr.svg" alt="QR code linking to arabcommunityalliance.org" width="150" height="150" />
+        <span>Scan to visit</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p class="footer-ar" lang="ar" dir="rtl">جاليتنا * صوتنا * مستقبلنا</p>
-      <p class="footer-en">OUR COMMUNITY * <span class="accent">OUR VOICE</span> * OUR FUTURE</p>
-    </footer>
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <span class="eyebrow">Reach Out</span>
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:Contact@ArabCommunityAlliance.org">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">Contact@ArabCommunityAlliance.org</span>
+        </a>
+        <a class="contact-item" href="tel:+16562260998">
+          <span class="contact-label">Text / Phone</span>
+          <span class="contact-value">(656) 226-0998</span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Tampa Bay, Florida</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark"><span class="l-a">A</span><span class="l-c">C</span><span class="l-a2">A</span></span>
+        <span>Arab Community Alliance</span>
+      </div>
+      <p class="footer-ar" lang="ar" dir="rtl">جاليتنا • صوتنا • مستقبلنا</p>
+      <p class="footer-tagline">Our Community • <span class="accent">Our Voice</span> • Our Future</p>
+      <p class="footer-copy">© 2026 Arab Community Alliance · Tampa, Florida · A 501(c) nonprofit community organization</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      })
+    );
+    // Shadow on nav when scrolled
+    const nav = document.querySelector('.nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  </script>
 </body>
 </html>
