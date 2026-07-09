@@ -1,0 +1,229 @@
+:root {
+  --navy: #3c4a5e;
+  --navy-dark: #2f3b4c;
+  --red: #c0392b;
+  --green: #2e8b57;
+  --ink: #1f2733;
+  --paper: #f4f4f2;
+  --line: #cfd3d8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  background: #dfe2e6;
+  color: var(--ink);
+  padding: 24px 12px;
+  line-height: 1.4;
+}
+
+[lang="ar"] { font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif; }
+
+.flyer {
+  max-width: 720px;
+  margin: 0 auto;
+  background:
+    repeating-linear-gradient(45deg, rgba(0,0,0,0.025) 0 2px, transparent 2px 14px),
+    repeating-linear-gradient(-45deg, rgba(0,0,0,0.025) 0 2px, transparent 2px 14px),
+    var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.18);
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  padding: 28px 24px 20px;
+  text-align: center;
+}
+
+.flag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 132px;
+  height: 88px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  transform: perspective(300px) rotateY(6deg);
+}
+.flag-stripes {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    #b22234 0, #b22234 6.9px,
+    #fff 6.9px, #fff 13.8px
+  );
+}
+.flag-canton {
+  position: absolute; top: 0; left: 0;
+  width: 52%; height: 53.8%;
+  background: #3c3b6e;
+}
+.flag-stars {
+  position: absolute; inset: 4px;
+  background:
+    radial-gradient(circle, #fff 26%, transparent 28%) 0 0 / 20% 25%;
+  opacity: 0.95;
+}
+
+.brand { display: inline-block; }
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 88px;
+  line-height: 0.9;
+  letter-spacing: 2px;
+}
+.logo .l-a  { color: #1f2733; }
+.logo .l-c  { color: var(--red); }
+.logo .l-a2 { color: var(--green); }
+
+.brand-names {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 4px;
+}
+.brand-en {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--ink);
+  letter-spacing: 1px;
+}
+.brand-ar {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--ink);
+  align-self: center;
+}
+.brand-location {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 4px 18px;
+  border-radius: 2px;
+}
+
+/* BANDS */
+.band {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+  padding: 20px 28px;
+}
+.mission p { font-weight: 700; font-size: 15.5px; }
+.mission-ar { margin-top: 8px; font-size: 16px; }
+
+.join { background: var(--navy-dark); }
+.join-en { font-weight: 700; font-size: 20px; }
+.join-ar { font-size: 24px; font-weight: 700; margin-top: 6px; }
+
+/* PROGRAMS */
+.programs {
+  display: flex;
+  gap: 0;
+  padding: 24px 28px;
+}
+.programs-col { flex: 1; }
+.programs-en { padding-right: 24px; border-right: 2px solid var(--ink); }
+.programs-ar { padding-left: 24px; text-align: right; }
+.programs h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.programs ul { list-style: none; }
+.programs li {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 28px;
+}
+.contact-info { flex: 1; }
+.contact-lead {
+  font-weight: 700;
+  font-size: 19px;
+  text-align: right;
+  margin-bottom: 2px;
+}
+.contact-link { text-align: right; margin-bottom: 16px; }
+.contact-link a { color: #2e64c0; }
+.contact-email, .contact-phone {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.contact-email a { color: var(--ink); }
+.contact-phone a { color: var(--ink); text-decoration: none; }
+.contact-web {
+  margin-top: 12px;
+  font-weight: 800;
+  font-size: 22px;
+}
+.contact-web a { color: #2e64c0; }
+.contact a { text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact-qr img {
+  display: block;
+  border: 6px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 18px 24px 26px;
+}
+.footer-ar {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.footer-en {
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+.footer-en .accent { color: var(--red); }
+
+/* RESPONSIVE */
+@media (max-width: 560px) {
+  body { padding: 8px 6px; }
+  .flag { width: 92px; height: 62px; top: 12px; left: 12px; }
+  .logo { font-size: 60px; }
+  .brand-en { font-size: 19px; }
+  .brand-ar { font-size: 18px; }
+  .brand-names { gap: 12px; }
+  .brand-location { font-size: 16px; }
+  .mission p { font-size: 13px; }
+  .programs { flex-direction: column; padding: 20px; }
+  .programs-en { padding-right: 0; border-right: none; border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 16px; }
+  .programs-ar { padding-left: 0; }
+  .programs li { font-size: 15px; }
+  .contact { flex-direction: column-reverse; align-items: center; text-align: center; }
+  .contact-lead, .contact-link { text-align: center; }
+  .contact-web { font-size: 18px; }
+  .footer-ar, .footer-en { font-size: 20px; }
+}
